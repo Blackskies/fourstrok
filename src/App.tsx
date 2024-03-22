@@ -1,25 +1,70 @@
-import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import HeaderBar from './Common/HeaderBar';
+import FooterBar from './Common/FooterBar';
+import theme from './theme';
+import { ThemeProvider } from '@mui/material/styles'
+import PhotoCarosol from './Common/PhotoCarosol';
+import Container from '@mui/material/Container';
+import ContactUs from './Pages/ContactUsPage';
+import PartnerBrands from './Pages/PartnerBrands';
+import { Grid } from '@mui/material';
+import Reviews from './Common/Reviews';
+import CarServices from './Pages/CarServices';
 
 function App() {
+
+  const StyleForEachBlock = {
+    paddingBottom: 5,
+    paddingTop: 5
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+    <ThemeProvider theme={theme}>
+      <div className="App" style={{
+        // background: "#fdfeff"
+      }}>
+        <HeaderBar />
+        <Grid>
+          <PhotoCarosol />
+        </Grid>
+
+        {/* Main Content */}
+
+        <Grid
+          container
         >
-          Learn React
-        </a>
-      </header>
-    </div>
+          <Grid xl={1} lg={1} ></Grid>
+          <Grid xl={10} lg={10} >
+            <Grid
+              id={"Services"}
+              sx={StyleForEachBlock}
+            >
+              <CarServices />
+            </Grid>
+            <Grid
+              id={"Reviews"}
+              sx={StyleForEachBlock}
+            >
+              <Reviews />
+            </Grid>
+            <Grid
+              id={"Partner-Brands"}
+              sx={StyleForEachBlock}
+            >
+              <PartnerBrands />
+            </Grid>
+            <Grid
+              id={"Contact-Us"}
+              sx={{ paddingTop: 5 }}
+            >
+              <ContactUs />
+            </Grid>
+          </Grid>
+          <Grid xl={1} lg={1}></Grid>
+        </Grid>
+        <FooterBar />
+      </div>
+    </ThemeProvider >
   );
 }
 
