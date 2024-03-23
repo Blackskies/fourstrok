@@ -25,7 +25,7 @@ const TextLogo = ({ logoFontSize }: TextLogoProps) => {
                     noWrap
                     sx={{
                         display: 'inline-block',
-                        fontWeight: 700,
+                        fontWeight: 500,
                         color: '#A91B0D',
                         fontSize: 35
                     }} >
@@ -36,7 +36,7 @@ const TextLogo = ({ logoFontSize }: TextLogoProps) => {
                     sx={{
                         display: 'inline-block',
                         color: theme.palette.primary.main,
-                        fontWeight: 700,
+                        fontWeight: 500,
                         fontSize: 35
                     }} >
                     Stroke
@@ -47,7 +47,7 @@ const TextLogo = ({ logoFontSize }: TextLogoProps) => {
 
                         display: 'inline-block',
                         color: '#0088C6',
-                        fontWeight: 700,
+                        fontWeight: 500,
                         fontSize: 35
                     }}
                 >

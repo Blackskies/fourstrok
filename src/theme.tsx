@@ -1,6 +1,6 @@
 import { createTheme } from '@mui/material/styles'
 import "typeface-open-sans";
-const font = "Kanit,Helvetica,  Gabarito";
+const font = "Helvetica, Kanit,  Gabarito";
 const theme = createTheme({
     typography: {
         fontFamily: font,

@@ -7,6 +7,7 @@ import TextLogo from '../../Common/TextLogo';
 import PaintingImage from '../../Common/assets/services/painting.jpg'
 import DentingImage from '../../Common/assets/services/denting.jpg'
 import OilAndFilterImage from '../../Common/assets/services/oilAndFilter.jpeg'
+import BreaksImage from '../../Common/assets/services/breaks.jpeg'
 
 const CarServices = () => {
     const addressList = ['8-2-602/i', ' Road No. 10', 'Banjara Hills', 'Hyderabad', 'Telangana 500034']
@@ -27,7 +28,7 @@ const CarServices = () => {
         },
         "Brake Services": {
             "description": " Includes checking brake pads, discs, and fluid levels. It’s crucial for safety to ensure that brakes are responsive and in good condition.",
-            "image": ""
+            "image": BreaksImage
         },
         "Battery Service & Replacement": {
             "description": "Testing the battery’s charge and health, ensuring reliable starts, and replacing it if necessary to avoid breakdowns.",
